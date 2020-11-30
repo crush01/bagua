@@ -8,6 +8,9 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
+		},
+		globalData: { // 小程序全局数据
+			guaList: require("@/assets/json/gua.json")
 		}
 	}
 </script>

@@ -1,7 +1,7 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
 				"navigationBarTitleText": "八卦"
 			}
@@ -17,6 +17,26 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "#4f4f4c",
+		"selectedColor": "#1296db",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "static/home_1.png",
+				"selectedIconPath": "static/home_2.png"
+			},
+			{
+				"pagePath": "pages/zhanpu/index",
+				"text": "占卜",
+				"iconPath": "static/bagua_2.png",
+				"selectedIconPath": "static/bagua_3.png"
+			}
+		]
 	}
 }
